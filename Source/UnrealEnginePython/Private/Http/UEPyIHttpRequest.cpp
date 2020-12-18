@@ -307,6 +307,7 @@ static int ue_py_ihttp_request_init(ue_PyIHttpRequest *self, PyObject *args, PyO
 	{
 		return -1;
 	}
+	/* @AAWAITED@
 	new(&self->http_request) TSharedRef<IHttpRequest>(FHttpModule::Get().CreateRequest());
 	new(&self->on_process_request_complete) TSharedPtr<FPythonSmartHttpDelegate>(nullptr);
 	new(&self->on_request_progress) TSharedPtr<FPythonSmartHttpDelegate>(nullptr);
@@ -322,6 +323,7 @@ static int ue_py_ihttp_request_init(ue_PyIHttpRequest *self, PyObject *args, PyO
 	}
 
 	self->base.http_base = &self->http_request.Get();
+	*/
 	return 0;
 }
 

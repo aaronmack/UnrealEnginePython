@@ -1065,8 +1065,8 @@ PyObject *py_ue_skeletal_mesh_build_lod(ue_PyUObject *self, PyObject * args, PyO
 	build_settings.bComputeTangents = (py_compute_tangents && PyObject_IsTrue(py_compute_tangents));
 	build_settings.bRemoveDegenerateTriangles = true;
 
-	bool success = MeshUtilities.BuildSkeletalMesh(lod_model, mesh->RefSkeleton, influences, wedges, faces, points, points_to_map, build_settings);
-
+	// @@AAWAITED@ bool success = MeshUtilities.BuildSkeletalMesh(lod_model, mesh->RefSkeleton, influences, wedges, faces, points, points_to_map, build_settings);
+	bool success = false;
 	if (!success)
 	{
 		return PyErr_Format(PyExc_Exception, "unable to create new Skeletal LOD");

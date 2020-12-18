@@ -19,6 +19,8 @@ public class UnrealEnginePython : ModuleRules
     private string[] windowsKnownPaths =
     {
        // "C:/Program Files/Python37",
+       "D:/DEV_PROJECT/UnrealEngine/Engine/Binaries/ThirdParty/Python3/Win64",
+       "D:/DEV_PROJECT/UnrealEngine/Engine/Source/ThirdParty/Python3/Win64",
         "C:/Program Files/Python36",
         "C:/Program Files/Python35",
         "C:/Python27",
